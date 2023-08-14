@@ -4,40 +4,292 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Website Landing Page</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <!--- -------Header Section------- --->
-    <div id="header">
-        <div class="container">
+
+    <header>
         <a href="#" class="logo"><span>T</span>ravel</a>
         <nav class="header-content">
-            <ul>
-                <li><a href ="#">Home</a></li>
-                <li><a href ="#">Book</a></li>
-                <li><a href ="#">Packages</a></li>
-                <li><a href ="#">Services</a></li>
-                <li><a href ="#">Reviews</a></li>
-                <li><a href ="#">Contact</a></li>
-            </ul>
+            <a href ="#header">Home</a>
+            <a href ="#book">Book</a>
+            <a href ="#packages">Packages</a>
+            <a href ="#services">Services</a>
+            <a href ="#contact">Contact</a>
         </nav>
         <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="search-button"></i>
+            <i class="fa fa-search" aria-hidden="true" id="search-button"></i>
             <i class="fa-solid fa-user" id="login-button"></i>
         </div>
         <form action="" class="search-bar-container">
             <input type="search" id="search-bar" placeholder="Search here">
-            <label for="search-bar" class="fa-solid fa-magnifying-glass"> </label>
-
+            <label for="search-bar" class="fa fa-search"> </label>
         </form>
+    </header>
+
+
+    <!--- -------Login Form------- --->
+
+    <div class="login-form">
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="Login" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forget Password? <a href="#">Click Here</a></p>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+
+    <!--- -------Home Section------- --->
+
+    <div class="home" id="home">
+        <div class="content">
+            <h3>To Travel is to LIVE!</h3>
+            <p>It's time for a new Adventure</p>
+            <a href="#" class="btn">Discover NOW!</a>
         </div>
-    </div> 
+        <div class="controls">
+            <span class="video-btn active" data-src="/project1-LandingPage/Images/video3.mp4"></span>
+            <span class="video-btn" data-src="/project1-LandingPage/Images/video2.mp4"></span>
+            <span class="video-btn" data-src="/project1-LandingPage/Images/video1.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="/project1-LandingPage/Images/video3.mp4" id="video" loop autoplay muted></video>
+        </div>
+
+    </div>
 
 
+    <!--- -------Booking Section------- --->
+
+    <div class="book" id="book">
+        <div class="heading">
+            <span>B</span>
+            <span>0</span>
+            <span>0</span>
+            <span>K</span>
+            <span class="space"></span>
+            <span>N</span>
+            <span>0</span>
+            <span>W</span>
+        </div>
+
+        <div class="row">
+            <div class="travel-img">
+                <img src="/project1-LandingPage/Images/bookingsection.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputdata">
+                    <h3>Where To?</h3>
+                    <input type="text" placeholder="Your Destination">
+                </div>
+                <div class="inputdata">
+                    <h3>Number of Travel Buddies?</h3>
+                    <input type="number" placeholder="Number of Guests">
+                </div>
+                <div class="inputdata">
+                    <h3>Arrival Date?</h3>
+                    <input type="date">
+                </div>
+                <div class="inputdata">
+                    <h3>Departure Date</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="Book Now">
+            </form>
+        </div>
+    </div>
 
 
+    <!--- -------Packages Section------- --->
 
-    <script src="script.js"/>
+    <div class="packages" id="packages">
+        <div class="heading">
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>S</span>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="/project1-LandingPage/Images/Rajasthan.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Rajasthan</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">Rs.15,000<span> 20,000</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/project1-LandingPage/Images/Sikkim.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Sikkim</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">Rs.15,000<span> 20,000</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/project1-LandingPage/Images/TamilNadu.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Tamil Nadu</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">Rs.15,000<span> 20,000</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/project1-LandingPage/Images/Goa.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Goa</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">Rs.15,000<span> 20,000</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/project1-LandingPage/Images/Varanasi.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Varanasi</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">Rs.15,000<span> 20,000</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/project1-LandingPage/Images/Rishikesh.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i>Rishikesh</h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price">Rs.15,000<span> 20,000</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- -------Services Section------- --->
+
+    <div class="services" id="services">
+        <div class="heading">
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>I</span>
+            <span>C</span>
+            <span>E</span>
+            <span>S</span>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Safety Travel Guide</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Food and Drinks</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>Adventures</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h3>Around the World</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Fastest Travel</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- -------Contact Section------- --->
+
+    <div class="contact" id="reviews">
+        <div class="heading">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="/project1-LandingPage/Images/travel3.png">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="Mobile No.">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Send Message">
+            </form>
+        </div>
+        
+    </div>
+
+<script src="script.js"></script>
+   
 </body>
 </html>
