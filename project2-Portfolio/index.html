@@ -14,7 +14,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="../Images/dog-logo.png" class="logo">
+                <img src="/project2-Portfolio/Images/dog-logo.png" class="logo">
                 <ul>
                     <li><a href ="#Home">Home</a></li>
                     <li><a href ="#About">About</a></li>
@@ -36,7 +36,7 @@
                 <p>Web Developer</p>
             </div> 
             <div class="home-image">
-                <img src="../Images/My-pic.jpeg">
+                <img src="/project2-Portfolio/Images/My-pic.jpeg">
             </div>
         </div> 
     </div>
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-part1">
-                    <img src="../Images/My-pic.jpeg">
+                    <img src="/project2-Portfolio/Images/My-pic.jpeg">
                 </div>
                 <div class="about-part2">
                     <h1 class="sub">About Me</h1>
@@ -116,21 +116,21 @@
             <h1 class="sub">Projects</h1>
             <div class="project-list">
                 <div class="project-work">
-                    <img src="../Images/Portfolio-project.jpeg">
+                    <img src="/project2-Portfolio/Images/Portfolio-project.jpeg">
                     <div class="layer">
                         <h3>Portfolio Website</h3>
                         <a href="https://github.com/laavanya11/Portfolio-Website.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="project-work">
-                    <img src="../Images/netflix-project.jpeg">
+                    <img src="/project2-Portfolio/Images/netflix-project.jpeg">
                     <div class="layer">
                         <h3>Netflix front-end Clone</h3>
                         <a href="https://github.com/laavanya11/Netflix-Homepage.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="project-work">
-                    <img src="../Images/temperature-converter-project.png">
+                    <img src="/project2-Portfolio/Images/temperature-converter-project.png">
                     <div class="layer">
                         <h3>Temperature-Converter</h3>
                         <a href="https://github.com/laavanya11/Temperature-Converter.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -168,23 +168,23 @@
     <!-----javascript----->
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
+        var tabcontents=document.getElementsByClassName("tab-contents");
 
-function opentab(tabname)
-{
-    //for(variable 'of' object)
-    for(tablink of tablinks)
-    {
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents)
-    {
-        tabcontent.classList.remove("active-tab");
-    }
+        function opentab(tabname)
+        {
+            //for(variable 'of' object)
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
 
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
     </script>
         
 </body>
